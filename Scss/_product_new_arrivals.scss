@@ -1,0 +1,47 @@
+@use "Variables_mixins" as mv;
+
+.product_new_arrivals {
+  @include mv.flex_box(flex, space-evenly, center, wrap);
+  text-align: center;
+  color: mv.$color_white;
+  @include mv.tamaños(null,80%);
+  padding-top: 3em;
+  margin:0 auto 10em;
+  .title_new_product {
+    width: 100%;
+    font-size: 2.1em;
+    font-weight: normal
+  }
+  .card_product_new_arrivals {
+    @include mv.tamaños(null, 330px);
+    background: linear-gradient(
+      160deg,
+      hsl(103, 33%, 33%) 0%,
+      hsl(59, 25%, 35%) 100%
+    );
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    .btn_product {
+      @include mv.tamaños(35px, 50px);
+      padding-top: 0.5em;
+      display: block;
+      border-radius: 5px;
+      font-size: 0.8em;
+      color: #fff;
+      background-color: rgb(255, 86, 24);
+    }
+    .img_product {
+      @include mv.tamaños(130px, 130px);
+    }
+    .title_card_product {
+      line-height: 0;
+    
+    }
+    .price_before {
+      color: rgb(255, 86, 24);
+      margin-left: 1em;
+      font-size: 0.9em;
+    }
+  }
+}

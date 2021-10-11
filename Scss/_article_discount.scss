@@ -1,0 +1,26 @@
+@use "Variables_mixins" as mv;
+
+.article_discount {
+  @include mv.flex_box(flex, space-evenly, center, wrap);
+  background: linear-gradient(
+    160deg,
+    hsl(103, 33%, 33%) 0%,
+    hsl(59, 25%, 35%) 100%
+  );
+  margin-bottom: 10em;
+  padding: 1.5em;
+  color: mv.$color_white;
+  border-radius: 20px;
+  @include mv.tamaños(null, 80%);
+  margin: auto;
+  .img_article_discount {
+    @include mv.tamaños(50%, 50%);
+  }
+  .title_discount {
+    @include mv.tamaños(null, 250px);
+    margin-bottom: 1.2em;
+  }
+  .btn_discount {
+    @include mv.button_naranja();
+  }
+}

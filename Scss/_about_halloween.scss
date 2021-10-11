@@ -1,0 +1,26 @@
+@use "Variables_mixins" as m_v;
+
+.about_halloween{
+    @include m_v.flex_box(flex,space-evenly,center,wrap);
+    margin-bottom: 6em;
+    padding: 2em 1em;
+    .content_about_halloween{
+        @include m_v.tamaños(null,400px);
+        color: m_v.$color_white;
+        margin-bottom: 3em;
+        .title_about_halloween{
+            font-size: 2.1em;
+            @include m_v.tamaños(null,300px)
+        }
+        p{
+            margin-bottom: 2em;
+        }
+        .btn_about_halloween{
+            @include m_v.button_naranja;
+        }
+    }
+    .img_about_halloween{
+        @include m_v.tamaños(450px,350px)
+    }
+    
+}

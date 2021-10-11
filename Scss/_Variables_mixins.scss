@@ -1,0 +1,21 @@
+$color_white:#ffff;
+$color_opacity:#ccc;
+
+@mixin tamaños($height:height,$width:width) {
+    height: $height;
+    width: $width;
+}
+@mixin flex_box($flex:flex,$justy_content:null,$align_items:null,$wrap) {
+    display: $flex;
+    justify-content: $justy_content;
+    align-items: $align_items;
+    flex-wrap: $wrap;
+}
+@mixin button_naranja {
+  padding: 1em 1.5em;
+  background-color: rgb(255, 86, 24);
+  color:$color_white;
+  border-radius: 10px;
+}
+
+

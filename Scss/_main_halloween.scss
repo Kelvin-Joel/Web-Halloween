@@ -1,0 +1,39 @@
+@use "Variables_mixins" as m_v;
+.main_halloween {
+  @include m_v.flex_box(flex,space-evenly,center,wrap);
+  padding-top: 4em;
+  margin-bottom: 10em;
+ 
+}
+.img_main_calabaza {
+  @include m_v.tamaños(70%, 350px);
+  display: block;
+
+  img {
+    @include m_v.tamaños(100%, 100%);
+  }
+}
+
+.main_information {
+ @include m_v.tamaños(null, 500px);
+  color: m_v.$color_white;
+  padding-top: 3em;
+  padding: 1em;
+}
+.top_scariest {
+  font-size: 1.3em;
+  position: relative;
+  top: 2em;
+}
+.title_trick_treat {
+  font-size: 4em;
+  width: 350px;
+  line-height: 1.1em;
+}
+.conte-button {
+  @include m_v.flex_box(flex, space-between, center,null);
+  @include m_v.tamaños(null,90%);
+}
+.btn_book_now {
+  @include m_v.button_naranja;
+}

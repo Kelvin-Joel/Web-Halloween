@@ -1,0 +1,43 @@
+@use "Variables_mixins" as mv;
+
+@media only screen and (max-width: 768px) {
+  .nav_menu {
+    transform: translateY(-100%);
+    @include mv.tamaños(450px,100%);
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+     .img_nav{
+      display: block;
+    }
+  }
+  .list_nabvar {
+    flex-direction: column;
+    background: linear-gradient(
+      90deg,
+      hsl(104, 28%, 40%) 0%,
+      hsl(58, 28%, 40%) 100%
+    );
+  }
+ .btn_nav {
+   display: block;
+    cursor: pointer;
+  } 
+  .section_trick_or_treat{
+    @include mv.tamaños(null,100%);
+   
+  }
+  .newsletter{
+    padding: 1em;
+    @include mv.tamaños(null,100%);
+    .text_newsletter{
+      @include mv.tamaños(null,90%);
+    }
+  }
+ 
+}
+
+.ChangeClass {
+  transform: translateY(0);
+}

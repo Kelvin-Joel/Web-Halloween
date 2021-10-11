@@ -1,0 +1,38 @@
+@use "Variables_mixins" as mv;
+
+.footer {
+  @include mv.flex_box(flex, space-evenly, center, wrap);
+  color: mv.$color_white;
+  .footer_information {
+    @include mv.tamaños(null, 300px);
+  }
+  .img_footer {
+    @include mv.tamaños(240px, 170px);
+  }
+  .footer_information {
+    @include mv.tamaños(null, 200px);
+    margin-bottom: 1.5em;
+    .title_footer_information {
+      font-size: 1em;
+    }
+    .list_redes {
+      margin: 0;
+      padding: 0;
+    }
+    .flex_footer {
+      @include mv.flex_box(flex, space-evenly, center, null);
+    }
+    .list_item {
+      padding: 0.2em 0.4em;
+      border-radius: 5px;
+      background: linear-gradient(
+        180deg,
+        hsl(103, 33%, 33%) 0%,
+        hsl(59, 25%, 35%) 100%
+      );
+    }
+    .item_link {
+      color: mv.$color_white;
+    }
+  }
+}

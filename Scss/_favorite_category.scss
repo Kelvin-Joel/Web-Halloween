@@ -1,0 +1,35 @@
+@use "Variables_mixins" as m_v;
+
+.article_favorite_category {
+  text-align: center;
+  color: m_v.$color_white;
+  margin-bottom: 6em;
+  .title_artcile_favorite {
+    font-size: 2em;
+    font-weight: normal;
+    @include m_v.tamaños(null,300px);
+    margin:0 auto 0;
+
+  }
+  .conte_galery_favorite {
+    @include m_v.flex_box(flex,space-evenly,center,wrap);
+    gap: 1em;
+    padding: .5em;
+   
+    .card_favorite {
+      
+      &:hover .img_category {
+        transform: translateY(-15px);
+      }
+      .img_category {
+        @include m_v.tamaños(200px, 200px);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      p{
+        @include m_v.tamaños(null,190px);
+      }
+    }
+  }
+}

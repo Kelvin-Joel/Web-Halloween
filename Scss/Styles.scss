@@ -1,0 +1,44 @@
+@use "header.scss";
+@use "main_halloween.scss";
+@use "favorite_category.scss";
+@use "about_halloween.scss";
+@use "section_trick_or_treat.scss";
+@use "article_discount.scss";
+@use "product_new_arrivals.scss";
+@use "newsletter.scss";
+@use "footer.scss";
+@use "response.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    90deg,
+    hsl(104, 28%, 40%) 0%,
+    hsl(58, 28%, 40%) 100%
+  );
+}
+.translate_opacity{
+  opacity: 0;
+  animation: animation 1s ease-in-out forwards;
+  animation-delay: .5s;
+}
+@keyframes animation{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

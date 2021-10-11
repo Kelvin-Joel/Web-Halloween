@@ -1,0 +1,57 @@
+@use "Variables_mixins" as m_v;
+
+header {
+  @include m_v.tamaños(75px, 100%);
+  @include m_v.flex_box(flex, space-around, center, null);
+  color: m_v.$color_white;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background: linear-gradient(
+    90deg,
+    hsl(104, 28%, 40%) 0%,
+    hsl(58, 28%, 40%) 100%
+  );
+  z-index: 9999;
+}
+.logo {
+  @include m_v.tamaños(100%, 145px);
+  @include m_v.flex_box(flex, space-around, center, null);
+  font-size: 1.2em;
+  .img_logo {
+    @include m_v.tamaños(30px, 30px);
+  }
+}
+.nav_menu {
+  @include m_v.tamaños(100%, 30em);
+  position: relative;
+  .list_nabvar {
+    @include m_v.flex_box(flex, space-evenly, center, null);
+    margin: 0;
+    padding: 0;
+    @include m_v.tamaños(100%, 100%);
+    .link_nabvar {
+      color: m_v.$color_white;
+      font-size: 1em;
+    }
+    .btn_support {
+      padding: 0.7em 1.6em;
+      border-radius: 50px;
+      border: 1px solid m_v.$color_white;
+    }
+    
+  }
+  .img_nav{
+    position: absolute;
+    left: 10px;
+    @include m_v.tamaños(130px,120px);
+    display: none;
+  }
+}
+
+.btn_nav {
+  font-size: 1.8em;
+  display: none;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
