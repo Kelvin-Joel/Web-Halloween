@@ -3,7 +3,7 @@
   @include m_v.flex_box(flex,space-evenly,center,wrap);
   padding-top: 4em;
   margin-bottom: 10em;
- 
+  /* border: 2px solid yellow; */
 }
 .img_main_calabaza {
   @include m_v.tamaños(70%, 350px);

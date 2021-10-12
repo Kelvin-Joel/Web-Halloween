@@ -4,6 +4,7 @@
     @include m_v.flex_box(flex,space-evenly,center,wrap);
     margin-bottom: 6em;
     padding: 2em 1em;
+    /* border: 2px solid yellow; */
     .content_about_halloween{
         @include m_v.tamaños(null,400px);
         color: m_v.$color_white;

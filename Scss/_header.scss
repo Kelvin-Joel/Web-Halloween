@@ -12,6 +12,7 @@ header {
     hsl(58, 28%, 40%) 100%
   );
   z-index: 9999;
+  /* border: 2px solid yellow;*/
 }
 .logo {
   @include m_v.tamaños(100%, 145px);
@@ -36,6 +37,7 @@ header {
     .btn_support {
       padding: 0.7em 1.6em;
       border-radius: 50px;
+     
       border: 1px solid m_v.$color_white;
     }
     
@@ -54,4 +56,5 @@ header {
   position: relative;
   z-index: 1000;
   cursor: pointer;
+  border: 2px solid yellow;
 }

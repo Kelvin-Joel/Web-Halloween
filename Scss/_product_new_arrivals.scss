@@ -4,6 +4,7 @@
   @include mv.flex_box(flex, space-evenly, center, wrap);
   text-align: center;
   color: mv.$color_white;
+  /* border: 2px solid yellow; */
   @include mv.tamaños(null,80%);
   padding-top: 3em;
   margin:0 auto 10em;

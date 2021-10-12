@@ -3,6 +3,7 @@
 .footer {
   @include mv.flex_box(flex, space-evenly, center, wrap);
   color: mv.$color_white;
+  /* border: 2px solid yellow; */
   .footer_information {
     @include mv.tamaños(null, 300px);
   }

@@ -3,6 +3,7 @@
 .section_trick_or_treat{
     @include mv.tamaños(null,70%);
     margin: auto;
+    /* border: 2px solid yellow; */
     @include mv.flex_box(flex,space-evenly,center,wrap);
     color: mv.$color_white;
     text-align: center;
