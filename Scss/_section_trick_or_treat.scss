@@ -1,41 +1,38 @@
 @use "Variables_mixins" as mv;
 
-.section_trick_or_treat{
-    @include mv.tamaños(null,70%);
-    margin: auto;
-    /* border: 2px solid yellow; */
-    @include mv.flex_box(flex,space-evenly,center,wrap);
-    color: mv.$color_white;
-    text-align: center;
-    margin-bottom: 10em;
-    padding-top: 2.5em;
-    .title_trick_or_treat{
-        width: 100%;
-        
-        font-size: 2.1em; 
-    }
-    .ducles_card{
-        padding: 1em;
-        @include mv.tamaños(null,200px);
-        border-radius: 20px;
-        margin: 1.5em;
-        background: linear-gradient(
-    160deg,
-    hsl(103, 33%, 33%) 0%,
-    hsl(59, 25%, 35%) 100%
-  );
-  &:hover img{
-      transform: translateY(-10px);
+.section_trick_or_treat {
+  @include mv.tamaños(null, 70%);
+  margin: auto;
+  /* border: 2px solid yellow; */
+  @include mv.flex_box(flex, space-evenly, center, wrap);
+  color: mv.$color_white;
+  text-align: center;
+  margin-bottom: 10em;
+  padding-top: 2.5em;
+  .title_trick_or_treat {
+    width: 100%;
+
+    font-size: 2.1em;
   }
-        img{
-            transition: .4s;
-            @include mv.tamaños(100px,100px);
-           
-        }
-        h3{
-           
-            line-height: 0;
-        }
+  .ducles_card {
+    padding: 1em;
+    @include mv.tamaños(null, 200px);
+    border-radius: 20px;
+    margin: 1.5em;
+    background: linear-gradient(
+      160deg,
+      hsl(103, 33%, 33%) 0%,
+      hsl(59, 25%, 35%) 100%
+    );
+    &:hover img {
+      transform: translateY(-10px);
     }
-    
+    img {
+      transition: 0.4s;
+      @include mv.tamaños(100px, 100px);
+    }
+    h3 {
+      line-height: 0;
+    }
+  }
 }

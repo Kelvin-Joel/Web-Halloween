@@ -63,7 +63,7 @@ header {
   position: relative;
   z-index: 1000;
   cursor: pointer;
-  border: 2px solid yellow;
+  
 }
 
 .main_halloween {
@@ -427,7 +427,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(90deg, #598349 0%, #838149 100%);
